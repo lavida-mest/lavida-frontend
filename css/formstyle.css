@@ -1,0 +1,236 @@
+
+/* Form Banner */
+.breadcrumb_part h1 {
+  height: 400px;
+  background-image: url("../images/formbanner.jpg");
+  color: white;
+  width: auto;
+}
+
+.row-plantrip h1 {
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: Black;
+}
+
+.overlay-plantrip {
+  background-color: rgba(0,0,0,0); /* Black background with opacity */
+}
+
+/* Form body */
+.formbody {
+  color: #5D6063;
+  /* background-color: #EAEDF0; */
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.formbody {
+  position: relative;
+  bottom: 100px;
+}
+
+
+
+.formheading h3 {
+  font-size: 2S0px;
+}
+
+.formheading p {
+  margin-bottom: 50px;
+}
+
+.traveler-form {
+  background-color: white;
+  border: 1px solid #D6D9DC;
+  border-radius: 10px;
+
+  width: 80%;
+  padding: 40px;
+  margin: 0 0 40px 0;
+}
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type='text'],
+.form-row input[type='email']{
+  background-color: #FFFFFF;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 15px;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.form-row input[type='text']:invalid,
+.form-row input[type='email']:invalid {
+  border: 1px solid #D55C5F;
+  color: #D55C5F;
+  box-shadow: none; /* Remove default red glow in Firefox */
+}
+
+.legacy-form-row {
+  border: none;
+  margin-bottom: 40px;
+}
+
+.legacy-form-row legend {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.legacy-form-row .radio-label {
+  display: inline;
+  font-size: 14px;
+  padding: 0 20px 0px 10px;
+  margin-bottom: 10px;
+}
+
+.legacy-form-row input[type='radio'] {
+  margin-top: 2px;
+}
+
+/* .legacy-form-row .radio-label,
+.legacy-form-row input[type='radio'] {
+  float: left;
+} */
+
+.form-row select {
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;            /* This won't work in Chrome or Safari */
+}
+
+
+  .form-row {
+    flex-direction: row;
+    align-items: flex-start; /* To avoid stretching */
+    margin-bottom: 20px;
+  }
+
+  .form-row input[type='text'],
+  .form-row input[type='email'],    /* Add */
+  .form-row select,                 /* These */
+  .form-row textarea {
+    width: 250px;
+    height: initial;
+  }
+
+  .form-row label {
+    /* text-align: right; */
+    width: 100%;
+    margin-top: 7px;
+    padding-right: 20px;
+  }
+
+  .form-rowbut button {
+    float: right;
+    background-color: Black;
+    display: inline-block;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 100px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    color: #fff;
+    background-color: #F2A500;
+    border-color: #F2A500;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+
+  .form-row select {
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 30%;
+    padding: 7px;
+    font-size: 14px;
+    margin-right: 100px;
+    color:Black;
+}
+
+.form-row select option{
+  color: black;
+}
+
+.tripdescription {
+  margin-top: 70px;
+}
+
+.form-row .checkbox-label {
+margin-top: 0px;
+  margin-bottom: 0;
+}
+
+.fielddeatails {
+  color: #999;
+}
+
+.checkbox-label span {
+  display: inline;
+  font-size: 14px;
+  padding: 0 20px 0px 10px;
+  margin-bottom: 10px;
+}
+
+.checkbox-container {
+  width: 100%;
+}
+
+ #activities-info {
+  font-size: 20px;
+}
+
+.activities-text {
+  font-size: 14px;
+}
+
+.single-trip {
+  background-color: #F9FAFB;
+}
+
+@media only screen and (min-width: 700px) {
+  .traveler-form {
+    width: 600px;
+  }
+
+  /* .legacy-form-row {
+    margin-bottom: 10px;
+  }
+  .legacy-form-row legend {
+    width: 120px;
+    text-align: right;
+    padding-right: 20px;
+  }
+  .legacy-form-row legend {
+    float: left;
+  } */

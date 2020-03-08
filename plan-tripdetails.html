@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>La Vida Trip Maker</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/formstyle.css">
+  </head>
+
+  <body>
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" fix="top" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">LaVida</a>
+	    </div>
+	  </nav>
+    <!-- END nav-->
+
+    <!-- Banner Part-->
+    <div class="breadcrumb_part">
+      <div class="row-plantrip">
+        <div class="overlay-plantrip">
+          <h1><strong>Create your local-made itinerary to Ghana</strong></h1>
+        </div>
+      </div>
+    </div>
+    <!-- Banner Part ends-->
+
+    <!-- Form Begins here-->
+  <section class="formbody">
+    <form class="traveler-form search-property-1" action="plan-tripdetails.html" method="get">
+      <div class=formheading>
+        <h3><strong>To start</strong></h1>
+          <p>This form will allow us connect you to the right experience creator and regularly update you on trips that
+          meet your tastes. </p>
+      </div>
+
+<!-- travel profile -->
+        <fieldset class='legacy-form-row'>
+          <legend><strong>You will be travelling...</strong></legend>
+            <div>
+              <input id='traveler-type-1'
+               name='traveler-type'
+               type='radio'
+               value='solo' />
+               <label for='traveler-type-1' class='radio-label'>Solo</label>
+            </div>
+            <div>
+              <input id='traveler-type-2'
+               name='traveler-type'
+               type='radio'
+               value='as a couple'
+               checked />
+               <label for='traveler-type-2' class='radio-label'>As a couple</label>
+             </div>
+            <div>
+              <input id='traveler-type-3'
+               name='traveler-type'
+               type='radio'
+               value='as a family'
+               />
+               <label for='traveler-type-3' class='radio-label'>As a family</label>
+             </div>
+             <div>
+               <input id='traveler-type-4'
+                name='traveler-type'
+                type='radio'
+                value='with friends'
+                checked />
+                <label for='traveler-type-4' class='radio-label'>With friends</label>
+              </div>
+              <div>
+                <input id='traveler-type-5'
+                 name='traveler-type'
+                 type='radio'
+                 value='as a group'
+                 checked />
+                 <label for='traveler-type-5' class='radio-label'>As a group</label>
+               </div>
+        </fieldset>
+
+      <!-- Date options -->
+      <div>
+        <fieldset class='legacy-form-row dates'>
+          <legend><strong>Do you know the exact dates of your trip?</strong></legend>
+            <div>
+              <input id='date-type-1'
+               name='date-type'
+               type='radio'
+               value='Yes' />
+               <label for='date-type-1' class='radio-label'>Yes</label>
+            </div>
+            <div>
+              <input id='date-type-2'
+               name='date-type'
+               type='radio'
+               value='No'
+               checked />
+               <label for='date-type-2' class='radio-label'>No</label>
+             </div>
+        </fieldset>
+      </div>
+
+      <div class='form-row'>
+        <label for='date-selection'><strong>Do you have a rough idea?</strong></label>
+        <select id='date-select' name='date-select'>
+          <option selected>Month (approx)?</option>
+          <option value="-1">Give me a suggestion</option>
+          <option value="2020-04-01">April 2020</option>
+          <option value="2020-05-01">May 2020</option>
+          <option value="2020-06-01">June 2020</option>
+          <option value="2020-07-01">July 2020</option>
+          <option value="2020-08-01">August 2020</option>
+          <option value="2020-09-01">September 2020</option>
+
+        </select>
+
+        <select  id='' name='date-select'>
+          <option selected>How long (approx)?</option>
+          <option value="1">Less than a week</option>
+          <option value="7">1 week</option>
+          <option value="14">2 weeks</option>
+          <option value="21">3 weeks</option>
+          <option value="22">More than 3 weeks</option>
+          <option value="-1">Give me a suggestion</option>
+        </select>
+      </div>
+
+      <!-- trip details -->
+      <div class="formheading tripdescription">
+        <h3><strong>Describe your ideal trip for us</strong></h1>
+          <p>The choices you make here are not final. They're to help our team create a preliminary itinerary that works for you. </p>
+      </div>
+
+      <div class='form-row'>
+        <label><strong>I would like my trip to include...</strong> <span class="fielddeatails">(several choices possible)</span></label>
+        <div class="checkbox-container">
+          <label class='checkbox-label' for='beaten-track'>
+          <input id='beaten-track'
+                 name='beaten-track'
+                 type='checkbox'
+                 value='offthebeatentrack'/>
+          <span>Off the beaten track</span>
+          </label>
+        </div>
+        <div class="checkbox-container">
+          <label class='checkbox-label' for='highlight'>
+          <input id='highlight'
+                 name='highlight'
+                 type='checkbox'
+                 value='highlights'/>
+          <span>Highlights</span>
+          </label>
+        </div>
+        <div class="checkbox-container">
+          <label class='checkbox-label' for='boutique'>
+          <input id='boutique'
+                 name='boutique'
+                 type='checkbox'
+                 value='boutique'/>
+          <span>Boutique travel</span>
+          </label>
+        </div>
+        <div class="checkbox-container">
+          <label class='checkbox-label' for='multiciti'>
+          <input id='multiciti'
+                 name='multiciti'
+                 type='checkbox'
+                 value='multicititours'/>
+          <span>Multi Citi tours</span>
+          </label>
+        </div>
+      </div>
+
+      <div class='form-row'>
+        <label id="activities-info"><strong>Activities info</strong></label>
+        <div class="activities-text">
+          <p>For example: the different parts of your trip
+            including desired activities, what you like, what you don't like,
+            any physical limitations of travelers, or any questions about
+            the trip… </p>
+        </div>
+        <div class="checkbox-container">
+          <label class='checkbox-label' for='activity1'>
+          <input id='hiking'
+                 name='hiking'
+                 type='checkbox'
+                 value='hiking'/>
+          <span>Hiking</span>
+          </label>
+        </div>
+        <div class="checkbox-container">
+          <label class='checkbox-label' for='activity2'>
+          <input id='biking'
+                 name='biking'
+                 type='checkbox'
+                 value='biking'/>
+          <span>Biking</span>
+          </label>
+        </div>
+        <div class="checkbox-container">
+          <label class='checkbox-label' for='activity3'>
+          <input id='swimming'
+                 name='swimming'
+                 type='checkbox'
+                 value='swimming'/>
+          <span>swimming</span>
+          </label>
+        </div>
+        <div class="checkbox-container">
+          <label class='checkbox-label' for='activity4'>
+          <input id='paragliding'
+                 name='paragliding'
+                 type='checkbox'
+                 value='paragliding'/>
+          <span>Paragliding</span>
+          </label>
+        </div>
+      </div>
+
+<!-- Budget field -->
+      <div class='form-row'>
+        <label for='budget'>Budget</label>
+        <input id='budget' name='budget' type='text' placeholder="$"/>
+      </div>
+
+
+      <div class='form-rowbut'>
+        <button>Begin</button>
+      </div>
+
+
+    </form>
+  </section>
+
+
+
+
+
+
+  </body>
