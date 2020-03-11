@@ -18,11 +18,9 @@ const getTrips = async () => {
         )
     });
     data = await response.json();
-<<<<<<< HEAD
-    localStorage.setItem("trips", data);
-=======
->>>>>>> 780b0b321fb28019a3224e5ac154277da08e5ff0
-    console.log(data);
+    localStorage.setItem("trips", JSON.stringify(data));
+    trips = JSON.parse(localStorage.getItem("trips"));
+    console.log(trips[1].trip_activity);
 }
 
 window.onload = getTrips();
