@@ -125,17 +125,17 @@
         <label for='date-selection'><strong>Do you have a rough idea?</strong></label>
         <select id='date-select' name='date-select'>
           <option selected>Month (approx)?</option>
-          <option value="-1">Give me a suggestion</option>
-          <option value="2020-04-01">April 2020</option>
-          <option value="2020-05-01">May 2020</option>
-          <option value="2020-06-01">June 2020</option>
-          <option value="2020-07-01">July 2020</option>
-          <option value="2020-08-01">August 2020</option>
-          <option value="2020-09-01">September 2020</option>
+          <option value="No Idea">Give me a suggestion</option>
+          <option value="April">April 2020</option>
+          <option value="May">May 2020</option>
+          <option value="June">June 2020</option>
+          <option value="July">July 2020</option>
+          <option value="August">August 2020</option>
+          <option value="September">September 2020</option>
 
         </select>
 
-        <select  id='' name='date-select'>
+        <select  id='travel-days' name='date-select'>
           <option selected>How long (approx)?</option>
           <option value="1">Less than a week</option>
           <option value="7">1 week</option>
@@ -147,10 +147,10 @@
       </div>
 
       <!-- trip details -->
-      <div class="formheading tripdescription">
+      <!-- <div class="formheading tripdescription">
         <h3><strong>Describe your ideal trip for us</strong></h1>
           <p>The choices you make here are not final. They're to help our team create a preliminary itinerary that works for you. </p>
-      </div>
+      </div> -->
 
       <div class='form-row'>
         <label><strong>I would like my trip to include...</strong> <span class="fielddeatails">(several choices possible)</span></label>
@@ -168,7 +168,7 @@
           <input id='highlight'
                  name='highlight'
                  type='checkbox'
-                 value='highlights'/>
+                 value='highlights' checked/>
           <span>Highlights</span>
           </label>
         </div>
@@ -186,7 +186,7 @@
           <input id='multiciti'
                  name='multiciti'
                  type='checkbox'
-                 value='multicititours'/>
+                 value='multicititours' checked/>
           <span>Multi Citi tours</span>
           </label>
         </div>
@@ -223,7 +223,7 @@
           <input id='swimming'
                  name='swimming'
                  type='checkbox'
-                 value='swimming'/>
+                 value='swimming' checked/>
           <span>swimming</span>
           </label>
         </div>
