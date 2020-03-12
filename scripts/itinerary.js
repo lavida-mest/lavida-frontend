@@ -8,19 +8,4 @@ form.addEventListener('submit', (e) => {
     }
 });
 
-const getTrips = async () => {
-    let response =  await fetch("http://127.0.0.1:8080/trip", {
-        method:'GET',
-        headers: new Headers(
-            {
-                'Content-Type': 'application/json',
-            }
-        )
-    });
-    data = await response.json();
-    localStorage.setItem("trips", JSON.stringify(data));
-    trips = JSON.parse(localStorage.getItem("trips"));
-    console.log(trips[1].trip_activity);
-}
 
-window.onload = getTrips();
