@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/formstyle.css">
+    <script src="scripts/view.js"></script>
   </head>
 
   <body class="single-trip">
@@ -69,35 +70,30 @@
           <div class="col-xs-12 col-sm-12 col-md-8 content-wrapper">
             <div class="itinerary-section itinerary-overview">
               <div class="itinerary-overview__cover">
-                <picture class="picture-fit-cover">
-                  <img src="images/destination-1a.png" alt="">
-                </picture>
+                <!-- <picture class="picture-fit-cover">
+                   <img src="images/destination-1a.png" alt=""> 
+                </picture> -->
               </div>
-              <div class="itinerary-overview__content">
-                <h1 class="itinerary-overview__title">Busia Weekend Escape</h1>
+              <div class="itinerary-overview__content" id="trip">
+                <!-- <h1 class="itinerary-overview__title">Busia Weekend Escape</h1>
                 <h5 class="location"><span class="icon icon-map-marker"></span> Secondi</h5>
-                <div class="itinerary-overview__tags">
-                  <ul class="tag-list">
-                    <li class="tag"><span class="tag__text" title="Off the beaten track">
-                      Highlights</span></li>
-                  </ul>
-                </div>
-                Explore the stunning Chilean scenery and an endless variety of outdoor
+                <p>Highlights</p>
+                <p> Explore the stunning Chilean scenery and an endless variety of outdoor
                 activities at your own pace with our carefully prepared 7 day, self-drive
                 road trip! Ideal for those who prefer the 'non-plan' plan mixed with wind
                 in their hair and a shot of adventure, all you have to do is grab the keys
                 to the rental upon arrival and enjoy the ride (Some of it may be bumpy as
-                not all the roads are paved). Ou...
+                not all the roads are paved). Ou...</p> -->
               </div>
             </div>
 <!-- Intinerary Highlights -->
             <div class="itinerary-highlights">
               <div class="itinerary-highlights__title">
-                Trip Highlights
+                <h4>Trip Acitivities</h4>
+                <p>Swimming</p> 
               </div>
               <ul class="itinerary-highlights__list">
-                <li class="itinerary-highlights__list-item" data-analytics="on" data-analytics-category="vara_iti" data-analytics-action="itinerary_overview" data-analytics-label="itinerary_overview_highlighted_1"><div class="itinerary-highlights__illustration"><div class="ratio ratio--1-1"><img class="ratio__content lazyloaded" data-src="https://assets.evcdn.net/public-website/varanasi/assets/svgs/illustrations/tags-highlight/305.svg" alt="Sightseeing" src="https://assets.evcdn.net/public-website/varanasi/assets/svgs/illustrations/tags-highlight/305.svg"></div></div><div class="itinerary-highlights__name">Sightseeing</div></li><li class="itinerary-highlights__list-item" data-analytics="on" data-analytics-category="vara_iti" data-analytics-action="itinerary_overview" data-analytics-label="itinerary_overview_highlighted_2"><div class="itinerary-highlights__illustration"><div class="ratio ratio--1-1"><img class="ratio__content lazyloaded" data-src="https://assets.evcdn.net/public-website/varanasi/assets/svgs/illustrations/tags-highlight/26.svg" alt="Snorkeling and diving" src="https://assets.evcdn.net/public-website/varanasi/assets/svgs/illustrations/tags-highlight/26.svg"></div></div><div class="itinerary-highlights__name">Snorkeling and diving</div></li><li class="itinerary-highlights__list-item" data-analytics="on" data-analytics-category="vara_iti" data-analytics-action="itinerary_overview" data-analytics-label="itinerary_overview_highlighted_3"><div class="itinerary-highlights__illustration"><div class="ratio ratio--1-1"><img class="ratio__content lazyloaded" data-src="https://assets.evcdn.net/public-website/varanasi/assets/svgs/illustrations/tags-highlight/20.svg" alt="Local cuisine" src="https://assets.evcdn.net/public-website/varanasi/assets/svgs/illustrations/tags-highlight/20.svg"></div></div><div class="itinerary-highlights__name">Local cuisine</div></li><li class="itinerary-highlights__list-item" data-analytics="on" data-analytics-category="vara_iti" data-analytics-action="itinerary_overview" data-analytics-label="itinerary_overview_highlighted_4"><div class="itinerary-highlights__illustration"><div class="ratio ratio--1-1"><img class="ratio__content lazyloaded" data-src="https://assets.evcdn.net/public-website/varanasi/assets/svgs/illustrations/tags-highlight/361.svg" alt="Nature observation" src="https://assets.evcdn.net/public-website/varanasi/assets/svgs/illustrations/tags-highlight/361.svg"></div></div><div class="itinerary-highlights__name">Nature observation</div></li><li class="itinerary-highlights__list-item" data-analytics="on" data-analytics-category="vara_iti" data-analytics-action="itinerary_overview" data-analytics-label="itinerary_overview_highlighted_5"><div class="itinerary-highlights__illustration"><div class="ratio ratio--1-1"><img class="ratio__content lazyloaded" data-src="https://assets.evcdn.net/public-website/varanasi/assets/svgs/illustrations/tags-highlight/15.svg" alt="Local culture" src="https://assets.evcdn.net/public-website/varanasi/assets/svgs/illustrations/tags-highlight/15.svg"></div></div><div class="itinerary-highlights__name">Local culture</div></li></ul>
-            </div>
+             </div>
 <!-- Itinerary days -->
             <div id="steps" class="page-section itinerary-section-steps">
               <div id="step_455006" class="itinerary-step">
@@ -109,7 +105,7 @@
                     </div>
                   </figure>
                 </div>
-                <div class="itinerary-step__content-wrapper">
+                <!-- <div class="itinerary-step__content-wrapper">
                   <h3 class="h3 itinerary-step__title">Day 1: Welcome Party</h3>
                   <div class="itinerary-step__description">
                     <p>Discover the wonders of nature in the Fjords of Norway: embark on a self-drive
@@ -118,7 +114,7 @@
                       paddle the UNESCO listed Geirangerfjord, hike in the Aurlands Valley or biking the Rallarroad,
                       to name just a few. Starting from Oslo also an option.</p>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -149,16 +145,16 @@
                         Trip Length
                       </div>
                       <div class="itinerary-sumup-duration-cell">
-                        <div class="itinerary-sumup-duration-value">
+                        <div class="itinerary-sumup-duration-value" id="trip-duration">
                           3 days
                         </div>
                       </div>
                     </div>
                     <div class="itinerary-sumup-budget-row clearfix">
                       <div class="itinerary-sumup-budget-label">
-                        Average Price
+                        Price
                       </div>
-                      <div class="itinerary-sumup-budget-cell">
+                      <div class="itinerary-sumup-budget-cell" id="trip-price">
                         <div class="itinerary-sumup-budget-value">
                           $160
                         </div>

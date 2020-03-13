@@ -9,7 +9,7 @@ const append = (parent, el) => {
 
 
 const getTrips = async () => {
-    let response =  await fetch("http://127.0.0.1:8080/trip", {
+    let response =  await fetch("ec2-34-217-213-90.us-west-2.compute.amazonaws.com:8080/trip", {
         method:'GET',
         headers: new Headers(
             {
@@ -28,8 +28,8 @@ const getTrips = async () => {
             tripDurationGuide = createNode('span'),
             tourName = createNode('h3'),
             tourLocation = createNode('h6'),
-            tripActivities = createNode('span');
-            guideID = createNode('input')
+            tripActivities = createNode('span'),
+            guideID = createNode('input'),
             tripID = createNode('input')
 
 
@@ -69,7 +69,7 @@ const getTrips = async () => {
             append(rows, tripCard);          
     }
     const viewByTrip = async () => {
-        let response =  await fetch(`http://127.0.0.1:8080/trip/${trip.trip_id}&${trip.tour_guide}`, {
+        let response =  await fetch(`ec2-34-217-213-90.us-west-2.compute.amazonaws.com:8080/trip/${trip.trip_id}&${trip.tour_guide}`, {
             method:'GET',
             headers: new Headers(
                 {
@@ -78,9 +78,22 @@ const getTrips = async () => {
             )
         });
         trip = await response.json();
+        localStorage.setItem("trip", JSON.stringify(trip));
+        console.log(trip)
         window.location = 'single-trip.html'
         console.log(trip)
     }
+    
+    // <h1 class="itinerary-overview__title">Busia Weekend Escape</h1>
+    //             <h5 class="location"><span class="icon icon-map-marker"></span> Secondi</h5>
+    //              <p>Highlights</p>
+    //             <p> Explore the stunning Chilean scenery and an endless variety of outdoor
+    //             activities at your own pace with our carefully prepared 7 day, self-drive
+    //             road trip! Ideal for those who prefer the 'non-plan' plan mixed with wind
+    //             in their hair and a shot of adventure, all you have to do is grab the keys
+    //             to the rental upon arrival and enjoy the ride (Some of it may be bumpy as
+    //             not all the roads are paved). Ou...</p>
+
     // localStorage.setItem("trips", JSON.stringify(trips));
     // trips = JSON.parse(localStorage.getItem("trips"));
     // console.log(trips[1].trip_activity);
