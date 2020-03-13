@@ -9,7 +9,8 @@ const append = (parent, el) => {
 
 
 const viewTrip = () => {
-    rows = document.getElementById('trip');
+    trip = JSON.parse(localStorage.getItem("trip"));
+    row = document.getElementById('trip');
         let tripName = createNode('h1'),
             tripLocation = createNode('h5'),
             locationIcon = createNode('span'),
@@ -19,15 +20,15 @@ const viewTrip = () => {
             tripName.classList.add('itinerary-overview__title');
             tripLocation.classList.add('location');
             locationIcon.classList.add('icon','icon-map-marker');
-            tripName.innerHTML = localStorage.getItem('trip_name');
-            tripLocation.innerHTML = locationIcon + ' '+ localStorage.getItem('trip_location');
-            tripCategory.innerHTML = localStorage.getItem('trip_status');
+            tripName.innerHTML = trip.trip_name;
+            tripLocation.innerHTML = trip.trip_location;
+            tripCategory.innerHTML = trip.trip_status;
             tripDescription.innerHTML = trip.trip_description;
 
-            append(rows, tripName);
-            append(rows, tripLocation);
-            append(rows, tripCategory);
-            append(rows, tripDescription);
+            append(row, tripName);
+            append(row, tripLocation);
+            append(row, tripCategory);
+            append(row, tripDescription);
 
 }
 
