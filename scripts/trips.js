@@ -9,7 +9,7 @@ const append = (parent, el) => {
 
 
 const getTrips = async () => {
-    let response =  await fetch("ec2-34-217-213-90.us-west-2.compute.amazonaws.com:8080/trip", {
+    let response =  await fetch("http://ec2-34-217-213-90.us-west-2.compute.amazonaws.com:8080/trip", {
         method:'GET',
         headers: new Headers(
             {
@@ -69,7 +69,7 @@ const getTrips = async () => {
             append(rows, tripCard);          
     }
     const viewByTrip = async () => {
-        let response =  await fetch(`ec2-34-217-213-90.us-west-2.compute.amazonaws.com:8080/trip/${trip.trip_id}&${trip.tour_guide}`, {
+        let response =  await fetch(`http://ec2-34-217-213-90.us-west-2.compute.amazonaws.com:8080/trip/${trip.trip_id}&${trip.tour_guide}`, {
             method:'GET',
             headers: new Headers(
                 {
