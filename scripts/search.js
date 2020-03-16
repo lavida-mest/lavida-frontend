@@ -25,7 +25,7 @@ trips.map((trip) => {
         tripContent.classList.add('text', 'p-4');
         tripImage.classList.add('img');
         tripImage.setAttribute('style', 'background-image: url(images/destination-1a.png);');
-        // tripImage.addEventListener('click', ()=> viewByTrip())
+        tripImage.addEventListener('click', ()=> viewByTrip())
         viewTrip.classList.add('price');
         viewTrip.setAttribute("id", "viewTrip")
         tripDurationGuide.classList.add('days');
@@ -44,6 +44,21 @@ trips.map((trip) => {
         append(tripContent, tourName);
         append(tripContent, tourLocation);
         append(tripContent, tripActivities);
-        append(rows, tripCard);          
+        append(rows, tripCard);
+        
+        const viewByTrip = async () => {
+            let response =  await fetch(`https://lavida-api.herokuapp.com/trip/${trip.trip_id}&${trip.tour_guide}`, {
+                method:'GET',
+                headers: new Headers(
+                    {
+                        'Content-Type': 'application/json',
+                    }
+                )
+            });
+            trip = await response.json();
+            localStorage.setItem("trip", JSON.stringify(trip));
+            console.log(trip)
+            window.location = 'single-trip.html'
+            console.log(trip)
+        }
 });
- // window.location = 'single-trip.html'
