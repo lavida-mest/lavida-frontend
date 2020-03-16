@@ -79,24 +79,8 @@ const getTrips = async () => {
         });
         trip = await response.json();
         localStorage.setItem("trip", JSON.stringify(trip));
-        console.log(trip)
         window.location = 'single-trip.html'
-        console.log(trip)
     }
-    
-    // <h1 class="itinerary-overview__title">Busia Weekend Escape</h1>
-    //             <h5 class="location"><span class="icon icon-map-marker"></span> Secondi</h5>
-    //              <p>Highlights</p>
-    //             <p> Explore the stunning Chilean scenery and an endless variety of outdoor
-    //             activities at your own pace with our carefully prepared 7 day, self-drive
-    //             road trip! Ideal for those who prefer the 'non-plan' plan mixed with wind
-    //             in their hair and a shot of adventure, all you have to do is grab the keys
-    //             to the rental upon arrival and enjoy the ride (Some of it may be bumpy as
-    //             not all the roads are paved). Ou...</p>
-
-    // localStorage.setItem("trips", JSON.stringify(trips));
-    // trips = JSON.parse(localStorage.getItem("trips"));
-    // console.log(trips[1].trip_activity);
 }
 window.onload = getTrips();
 
