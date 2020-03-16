@@ -20,13 +20,11 @@ const viewByTrip = async () => {
         )
     });
     trip = await response.json();
-    console.log(trip)
     localStorage.setItem("trip", JSON.stringify(trip));
 }
 
 const viewTrip = () => {
     trip = JSON.parse(localStorage.getItem("trip"));
-    console.log(trip)
     row = document.getElementById('trip');
         let tripName = createNode('h1'),
             tripLocation = createNode('h5'),
