@@ -25,7 +25,9 @@ trips.map((trip) => {
         tripContent.classList.add('text', 'p-4');
         tripImage.classList.add('img');
         tripImage.setAttribute('style', 'background-image: url(images/destination-1a.png);');
+        // tripImage.addEventListener('click', ()=> viewByTrip())
         viewTrip.classList.add('price');
+        viewTrip.setAttribute("id", "viewTrip")
         tripDurationGuide.classList.add('days');
         tripActivities.classList.add('days');
         tripDurationGuide.innerHTML = `${trip.trip_duration}`;
@@ -44,3 +46,4 @@ trips.map((trip) => {
         append(tripContent, tripActivities);
         append(rows, tripCard);          
 });
+ // window.location = 'single-trip.html'

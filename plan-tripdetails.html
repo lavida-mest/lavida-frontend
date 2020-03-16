@@ -77,7 +77,7 @@
               <input id='traveler-type-3'
                name='traveler-type'
                type='radio'
-               value='as a family'
+               value='family'
                />
                <label for='traveler-type-3' class='radio-label'>As a family</label>
              </div>
@@ -123,8 +123,8 @@
 
       <div class='form-row'>
         <label for='date-selection'><strong>Do you have a rough idea?</strong></label>
-        <select id='date-select' name='date-select'>
-          <option selected>Month (approx)?</option>
+        <select id='date-select' name='date-select' required>
+          <option value="">Month (approx)?</option>
           <option value="No Idea">Give me a suggestion</option>
           <option value="April">April 2020</option>
           <option value="May">May 2020</option>
@@ -132,11 +132,13 @@
           <option value="July">July 2020</option>
           <option value="August">August 2020</option>
           <option value="September">September 2020</option>
-
+          <option value="October">October 2020</option>
+          <option value="November">November 2020</option>
+          <option value="December">December 2020</option>
         </select>
 
-        <select  id='travel-days' name='date-select'>
-          <option selected>How long (approx)?</option>
+        <select  id='travel-days' name='date-select' required>
+          <option value="">How long (approx)?</option>
           <option value="1">Less than a week</option>
           <option value="7">1 week</option>
           <option value="14">2 weeks</option>
@@ -156,7 +158,8 @@
         <label><strong>I would like my trip to include...</strong> <span class="fielddeatails">(several choices possible)</span></label>
         <div class="checkbox-container">
           <label class='checkbox-label' for='beaten-track'>
-          <input id='beaten-track'
+          <input class="category"
+                 id='beaten-track'
                  name='beaten-track'
                  type='checkbox'
                  value='offthebeatentrack'/>
@@ -165,7 +168,8 @@
         </div>
         <div class="checkbox-container">
           <label class='checkbox-label' for='highlight'>
-          <input id='highlight'
+          <input class="category"
+                 id='highlight'
                  name='highlight'
                  type='checkbox'
                  value='highlights' checked/>
@@ -174,7 +178,8 @@
         </div>
         <div class="checkbox-container">
           <label class='checkbox-label' for='boutique'>
-          <input id='boutique'
+          <input class="category"
+                 id='boutique'
                  name='boutique'
                  type='checkbox'
                  value='boutique'/>
@@ -183,7 +188,8 @@
         </div>
         <div class="checkbox-container">
           <label class='checkbox-label' for='multiciti'>
-          <input id='multiciti'
+          <input class="category"
+                 id='multiciti'
                  name='multiciti'
                  type='checkbox'
                  value='multicititours' checked/>
@@ -202,7 +208,7 @@
         </div>
         <div class="checkbox-container">
           <label class='checkbox-label' for='activity1'>
-          <input id='hiking'
+          <input class='activity'
                  name='hiking'
                  type='checkbox'
                  value='hiking'/>
@@ -211,7 +217,7 @@
         </div>
         <div class="checkbox-container">
           <label class='checkbox-label' for='activity2'>
-          <input id='biking'
+          <input class='activity'
                  name='biking'
                  type='checkbox'
                  value='biking'/>
@@ -220,20 +226,47 @@
         </div>
         <div class="checkbox-container">
           <label class='checkbox-label' for='activity3'>
-          <input id='swimming'
+          <input class='activity'
                  name='swimming'
                  type='checkbox'
-                 value='swimming' checked/>
+                 value='swimming'/>
           <span>swimming</span>
           </label>
         </div>
         <div class="checkbox-container">
           <label class='checkbox-label' for='activity4'>
-          <input id='paragliding'
+          <input class='activity'
                  name='paragliding'
                  type='checkbox'
                  value='paragliding'/>
           <span>Paragliding</span>
+          </label>
+        </div>
+        <div class="checkbox-container">
+          <label class='checkbox-label' for='activity4'>
+          <input class='activity'
+                 name='sightseeing'
+                 type='checkbox'
+                 value='sightseeing' checked/>
+          <span>Sight Seeing</span>
+          </label>
+        </div>
+        <div class="checkbox-container">
+          <label class='checkbox-label' for='activity4'>
+          <input class='activity'
+                 name='nature'
+                 type='checkbox'
+                 value='nature' checked/>
+          <span>nature</span>
+          </label>
+        </div>
+        <div class="checkbox-container">
+          <label class='checkbox-label' for='activity4'>
+          <input class='activity'
+                 name='culture'
+                 type='checkbox'
+                 value='culture'/>
+          <span>culture</span>
           </label>
         </div>
       </div>
