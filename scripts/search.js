@@ -57,8 +57,6 @@ trips.map((trip) => {
             });
             trip = await response.json();
             localStorage.setItem("trip", JSON.stringify(trip));
-            console.log(trip)
             window.location = 'single-trip.html'
-            console.log(trip)
         }
 });

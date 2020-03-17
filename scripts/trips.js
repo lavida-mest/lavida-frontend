@@ -41,8 +41,6 @@ const getTrips = async () => {
             tripImage.setAttribute('style', 'background-image: url(images/destination-1a.png);');
             tripImage.setAttribute('value', trip.trip_id);
             tripImage.addEventListener('click', ()=> viewByTrip())
-            guideID.setAttribute('type', 'hidden');
-            tripID.setAttribute('type', 'hidden');
             viewTrip.classList.add('price');
             viewTrip.setAttribute('value', trip.tour_guide);
             viewTrip.classList.add('guide_id');

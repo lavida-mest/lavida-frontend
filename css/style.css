@@ -9440,6 +9440,10 @@ textarea.form-control {
   -webkit-box-shadow: none;
   box-shadow: none; }
 
+#show-on-success { 
+  display: none;
+}
+
 #ftco-loader.show {
   -webkit-transition: opacity .4s ease-out, visibility 0s linear 0s;
   -o-transition: opacity .4s ease-out, visibility 0s linear 0s;
