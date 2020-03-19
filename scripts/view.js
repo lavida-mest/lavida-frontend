@@ -10,7 +10,6 @@ const append = (parent, el) => {
 document.querySelector('#save-trip').addEventListener('click', (e) => {
     e.preventDefault();
     alertSnack = document.getElementById('show-on-success');
-    console.log(alertSnack.style.display)
     if (alertSnack.style.display === "none") {
        alertSnack.style.display = "none"
    } else {
